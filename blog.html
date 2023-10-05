@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotus Computer Institute</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/myLogo2.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i
+            class="fa-solid fa-xmark"
+            style="color: #ffffff"
+            onclick="hideMenu()"
+          ></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i
+          class="fa-solid fa-bars"
+          style="color: #ffffff"
+          onclick="showMenu()"
+        ></i>
+      </nav>
+      <h1 class="fade-in">Our Certificate and Online Programs For 2023</h1>
+    </section>
+
+    <div id="ModelBox">
+      <img class="fade-in" src="images/ad.jpg" width="100%" />
+      <div class="offerText">
+        <h2></h2>
+        <small></small>
+        <p></p>
+        <form>
+          <button></button>
+        </form>
+      </div>
+      <img src="images/close.png" class="closeIcon" onclick="closeModel()" />
+    </div>
+
+    <script>
+      let ModelBox = document.getElementById("ModelBox");
+
+      document.onmouseleave = function () {
+        ModelBox.style.display = "block";
+      };
+
+      function closeModel() {
+        ModelBox.style.display = "none";
+      }
+    </script>
+
+    <!---blog page-->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img class="fade-in" src="images/compImg5BLURRED (1).png" />
+          <h2>
+            Essential Skills You'll Gain from Enrolling in Our Computer
+            Institute
+          </h2>
+          <h4>Programming Proficiency</h4>
+          <p style="color: black; margin-top: 10px">
+            One of the core skills you'll develop at our computer institute is
+            programming. Whether you're interested in web development, mobile
+            app development, or data analysis, a strong foundation in
+            programming is essential. Our expert instructors will guide you
+            through languages like Python, C++, and JavaScript, ensuring you're
+            well-equipped to tackle real-world coding challenges.
+          </p>
+          <br />
+          <h4>Soft Skills and Problem-Solving</h4>
+          <p style="color: black; margin-top: 10px">
+            In addition to technical skills, our computer institute places a
+            strong emphasis on soft skills and problem-solving abilities. You'll
+            enhance your communication skills, teamwork, and critical thinking,
+            making you a well-rounded professional ready for the workplace.
+          </p>
+          <br />
+          <h4>Web Development Mastery</h4>
+          <p style="color: black; margin-top: 10px">
+            In today's digital age, web development is a highly sought-after
+            skill. Our web development courses cover everything from HTML and
+            CSS to advanced JavaScript frameworks. You'll learn to create
+            responsive, user-friendly websites and gain expertise in front-end
+            and back-end development.
+          </p>
+          <br />
+          <hr />
+          <p style="color: black; margin-top: 10px">
+            Enrolling in our computer institute means embarking on a journey of
+            skill development and personal growth. Whether you're looking to
+            kickstart a new career or advance in your current one, our programs
+            have something valuable to offer. Ready to take the next step?
+            Explore our course offerings, meet our experienced instructors, and
+            discover how our computer institute can empower you to thrive in the
+            ever-evolving tech industry. Get started on your path to success
+            today!
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                POST COMMENT
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+            <span>Graphic Designing</span>
+          </div>
+          <div>
+            <span>Web Designing</span>
+          </div>
+          <div>
+            <span>Microsoft Office</span>
+          </div>
+          <div>
+            <span>MS-Access</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---Footer-->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Our mission is to equip you with the knowledge and expertise needed to
+        thrive in the ever-evolving world of technology. Join us on a journey of
+        learning, growth, and limitless possibilities.
+      </p>
+
+      <div class="icons">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/p/Lotus-Computer-Institute-100040925201490/"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+      </div>
+      <p>Made by Yash K.C.</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

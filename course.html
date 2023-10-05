@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Computer Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/myLogo2.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="fade-in">Our Courses</h1>
+</section>
+
+<div id="ModelBox">
+    <img class="fade-in"  src="images/ad.jpg" width="100%">
+    <div class="offerText">
+        <h2></h2>
+        <small></small>
+        <p></p>
+        <form>
+        <button></button>
+        </form>
+    </div>
+    <img src="images/close.png" class="closeIcon" onclick="closeModel()">
+</div>
+
+<script>
+
+    let ModelBox = document.getElementById("ModelBox");
+
+    document.onmouseleave = function(){
+        ModelBox.style.display = "block";
+    }
+
+    function closeModel() {
+        ModelBox.style.display = "none";
+    }
+
+</script>
+
+<!---Course-->
+
+<section class="course">
+    <h1 class="fade-in">Courses We Offer</h1>
+    <p>Quality training at affordable cost</p>
+
+    <div class="row">
+        <div class="animate__animated animate__fadeInLeftBig course-col">
+            <h3>Basic Computer Course</h3>
+            <p>This course includes:</p>
+            <ul style="color: silver;">
+                <li>Fundamental Of Computers</li>
+                <li>Typing Tutor(English)</li>
+                <li>MS-Excel</li>
+                <li>MS-Word</li>
+                <li>MS-Power Point</li>
+                <li>Overview of Multimedia</li>
+                <li>Paint Brush</li>
+                <li>Disk Utilities/Virus Scanning</li>
+                <li>Email/Internet</li>
+                <li>Photo Scanning</li><br>
+            </ul>
+            <h4>Duration: One & half month</h4>
+            </div>
+
+            <div class="animate__animated animate__fadeInUpBig course-col">
+            <h3>Secretarial Based Package</h3>
+            <p>This course includes:</p>
+            <ul style="color: silver;">
+                <li>Fundamental Of Computers</li>
+                <li>Operating System(Theory)</li>
+                <li>English/Nepali Typing(Unicode)</li>
+                <li>MS-Excel 2019 (Advanced exercise)</li>
+                <li>MS-Word 2019 (Advanced exercise)</li>
+                <li>MS-Power Point/Paint Pro</li>
+                <li>Networking Environment (Theory/Practical)</li>
+                <li>Multimedia/Pen Drive/Web Application</li>
+                <li>Disk Utilities/Virus Scanning</li>
+                <li>Photo Scanning/Editing</li>
+                <li>Adobe Page Maker</li>
+                <li>Adobe Photoshop</li><br>
+            </ul>
+            <h4>Duration: Three months</h4>
+            </div>
+
+            <div class="animate__animated animate__fadeInRightBig course-col">
+            <h3>Diploma Computer Application</h3>
+            <p>This course includes:</p>
+            <ul style="color: silver;">
+                <li>Operating System(GUI/CUI Theory)</li>
+                <li>Typing Tuitor English/Nepali(Unicode)</li>
+                <li>MS-Excel 2019 (Advanced exercise)</li>
+                <li>MS-Word 2019 (Advanced exercise)</li>
+                <li>MS-Power Point/Paint Pro</li>
+                <li>Networking (Theory/Practical)</li>
+                <li>Basic Programming approach/technique</li>
+                <li>Programming in Qbasic</li>
+                <li>C Language(Programming)</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Adobe Page Maker</li>
+                <li>Adobe Photoshop</li>
+                <li>Python Program</li>
+                <li>Data Base (MS Access/My-SQL)</li>
+                <li>Project work (To be submitted by student)</li><br>
+            </ul>
+            <h4>Duration: 6 months</h>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+<!---Footer-->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Our mission is to equip you with the knowledge and expertise needed to
+        thrive in the ever-evolving world of technology. Join us on a journey of
+        learning, growth, and limitless possibilities.</p>
+
+    <div class="icons">
+       <a target="_blank" href="https://www.facebook.com/p/Lotus-Computer-Institute-100040925201490/"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+    <p>Made by Yash K.C.</p>
+</section>
+
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

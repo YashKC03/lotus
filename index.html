@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Computer Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/myLogo2.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+    </nav>
+
+<div class="textbox" id="blur">
+    <h1 class="fade-in">Lotus Computer Institute</h1>
+    <p class="fade-in">Learn everything from the basics to programming languages like <br>Python, C, C++, HTML, CSS and JAVASCRIPT in Lotus Computer Institute!
+    </p>
+    <a href="contact.html" class="hero-btn">Visit Us To Know More</a>
+</div>
+
+<div id="ModelBox">
+    <img class="fade-in" src="images/ad.jpg" width="100%">
+    <div class="offerText">
+        <h2></h2>
+        <small></small>
+        <p></p>
+        <form>
+        </form>
+    </div>
+    <img src="images/close.png" class="closeIcon" onclick="closeModel()">
+</div>
+
+<script>
+
+    let ModelBox = document.getElementById("ModelBox");
+
+    document.onmouseleave = function(){
+        ModelBox.style.display = "block";
+    }
+
+    function closeModel() {
+        ModelBox.style.display = "none";
+    }
+
+</script>
+
+
+</section>
+
+<!--Course-->
+
+<section class="course">
+    <h1>Why Should You Choose Lotus Computer Institute?</h1>
+    <p>Please visit to Lotus Computer center for more details.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Project-based learning environment</h3>
+            <p style="font-size: 20px;">we offer a comprehensive range of courses that cater to both beginners and advanced learners, ensuring that anyone, regardless of their skill level, can find a program that suits their needs.<br> Furthermore, we prioritize practical hands-on experience, enabling our students to gain real-world skills and be job-ready upon graduation</p>
+            </div>
+
+            <div class="course-col">
+            <h3>Professional mentors & well-equipped lab</h3>
+            <p style="font-size: 20px;">our experienced and knowledgeable instructors are dedicated to providing top-notch education, guiding students through the latest advancements in technology and programming languages. Additionally, our state-of-the-art facilities are equipped with the latest hardware and software, creating an optimal learning environment.</p>
+            </div>
+
+            <div class="course-col">
+            <h3>Affordability</h3>
+            <p style="font-size: 20px;">we understand the importance of affordability, and our institute offers competitive tuition rates and flexible payment options, making quality education accessible to all. Join us at our computer institute, and unlock your potential in the dynamic world of technology.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="testimonials">
+    <h1>What Our Students Says</h1>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/stock3.png">
+            <div>
+                <p>I recently completed a course at this computer institute, and overall, it was a fantastic learning experience. The instructors were knowledgeable and approachable, always willing to help with any questions or challenges I faced. The curriculum was comprehensive, covering a wide range of topics, and the hands-on projects were particularly valuable in gaining practical skills.</p>
+                <h3>Piyush Bansal</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/stock2.png">
+            <div>
+                <p>The institute's facilities were well-maintained and had up-to-date equipment. I highly recommend this institute for anyone looking to enhance their computer skills and knowledge.</p>
+                <h3>Dipesh Shrestha</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!---Call to Action-->
+
+<section class="cta">
+    <h1>Enroll For Our various courses</h1>
+    <a href="course.html" class="hero-btn">COURSES</a>
+</section>
+
+
+<!---Footer-->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Our mission is to equip you with the knowledge and expertise needed to
+        thrive in the ever-evolving world of technology. Join us on a journey of
+        learning, growth, and limitless possibilities.</p>
+
+    <div class="icons">
+       <a target="_blank" href="https://www.facebook.com/p/Lotus-Computer-Institute-100040925201490/"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+    <p>Made by Yash K.C.</p>
+</section>
+
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

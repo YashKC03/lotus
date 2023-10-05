@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotus Computer Institute</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/myLogo2.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i
+            class="fa-solid fa-xmark"
+            style="color: #ffffff"
+            onclick="hideMenu()"
+          ></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i
+          class="fa-solid fa-bars"
+          style="color: #ffffff"
+          onclick="showMenu()"
+        ></i>
+      </nav>
+      <h1 class="fade-in">Contact Us</h1>
+    </section>
+
+    <!---Contact Us-->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14127.067328574383!2d85.3221901!3d27.7244846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1919bd8472c9%3A0xee1d60aeda2d1f2d!2sLOTUS%20COMPUTER%20INSTITUTE!5e0!3m2!1sen!2snp!4v1695042094585!5m2!1sen!2snp"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+              <h5>Lazimpat Road, Kathmandu 44600</h5>
+              <p>Kathmandu, Nepal</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <h5>01 - 4000100 / 4532811/ 9841684137</h5>
+              <p>Sunday to friday, 10AM to 3PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h5>passang.lotus@gmail.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+
+          <div id="ModelBox">
+            <img
+              class="fade-in"
+              src="images/ad.jpg"
+              src="images/ad.jpg"
+              width="100%"
+            />
+            <div class="offerText">
+              <h2></h2>
+              <small></small>
+              <p></p>
+              <form>
+                <button></button>
+              </form>
+            </div>
+            <img
+              src="images/close.png"
+              class="closeIcon"
+              onclick="closeModel()"
+            />
+          </div>
+
+          <script>
+            let ModelBox = document.getElementById("ModelBox");
+
+            document.onmouseleave = function () {
+              ModelBox.style.display = "block";
+            };
+
+            function closeModel() {
+              ModelBox.style.display = "none";
+            }
+          </script>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Email address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!---Footer-->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Our mission is to equip you with the knowledge and expertise needed to
+        thrive in the ever-evolving world of technology. Join us on a journey of
+        learning, growth, and limitless possibilities.
+      </p>
+
+      <div class="icons">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/p/Lotus-Computer-Institute-100040925201490/"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+      </div>
+      <p>Made by Yash K.C.</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
